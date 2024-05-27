@@ -1,0 +1,22 @@
+{
+  "name": "fashion-ecommerce-landing-page",
+  "version": "1.0.0",
+  "description": "This is ecommerce landing page built using tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "build:style": "npx tailwindcss -i input.css -o ./css/style.css --watch"
+  },
+  "keywords": [
+    "ecommerce",
+    "tailwind",
+    "css"
+  ],
+  "author": "Priyesh Ranjan (codewithpriyesh)",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

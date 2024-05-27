@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind fashion website</title>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header class="fixed z-10 w-full backdrop-blur-sm bg-white/30">
+      <nav
+        class="relative flex flex-rows items-center justify-between px-5 py-5 text-lg uppercase content__center min-h-10"
+      >
+        <div class="logo flex-[0.3] font-bold text-lg">
+          <a href="#">Fashion</a>
+        </div>
+        <ul
+          class="fixed flex flex-col top-[68px] left-0 right-0 h-[calc(100vh-68px)] -translate-x-[101%] text-center gap-7 transition-transform ease-in-out duration-[0.7s] bg-white/50 w-full lg:flex-row lg:relative lg:translate-x-0 lg:bg-transparent lg:h-full lg:top-0 lg:justify-center"
+          id="nav-menu"
+        >
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">Lookbook</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">BLogs</a>
+          </li>
+        </ul>
+        <div class="product-links">
+          <ul class="flex flex-row items-center justify-center gap-7">
+            <li>
+              <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="heart-outline"></ion-icon></a>
+            </li>
+            <li>
+              <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="menu-toggle hover:cursor:pointer lg:hidden"
+          id="mobile-menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!-- navabr section ends -->
+    <!-- new section -->
+    <section class="relative pt-[68px] mb-5">
+      <div>
+        <img
+          src="./images/hero.png"
+          alt="hero_image"
+          class="w-full object-cover object-center h-[600px] md:h-full"
+        />
+        <div
+          class="absolute flex flex-col justify-start p-5 overflow-hidden text-base font-medium bottom-1/4 md:right-0 xl:pr-20 2xl:pr-56 md:text-lg animate-fade-right"
+        >
+          <h2>New Trend</h2>
+
+          <h1
+            class="text-[25px] leading-normal md:text-4xl md:leading-normal 2xl:text-[80px] font-bold"
+          >
+            COLLUSION
+          </h1>
+          <p>An exclusive selection of this season's trends</p>
+          <div class="flex flex-row gap-[34px] my-5 lg:my-[34px]">
+            <button type="button" class="py-1 text-white bg-black-text px-7">
+              Discover
+            </button>
+            <button
+              type="button"
+              class="py-1 text-white bg-black-text px-7 animate-bounce"
+            >
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- nwe section ends here  -->
+    <!-- category section starts here  -->
+    <section class="px-5 section__spacing-y content__center">
+      <div
+        class="grid gap-6 grid-flow-row justify-items-center lg:justify-items-stretch lg:grid-flow-col w-full lg:h-[574px]"
+      >
+        <div
+          class="relative lg:col-span-2 transition-all duration-[0.3s] ease-in-out hover:scale-[1.01] group cursor-pointer"
+        >
+          <img
+            class="w-[300px] h-[300px] lg:w-full lg:h-[286.8px] object-cover object-top"
+            src="./images/cat-man1.png"
+            alt="man"
+          />
+          <div
+            class="absolute bottom-0 left-0 px-5 overflow-hidden z-1 group-hover:bg-black/30 group-hover:w-[300px] group-hover:h-[300px] lg:group-hover:w-full lg:group-hover:h-full"
+          >
+            <p
+              class="flex flex-row items-center justify-items-center h-full text-lg text-white uppercase oppacity-0 group-hover:oppacity-100"
+            >
+              Category Name
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative lg:col-start-3 lg:row-start-1 lg:row-end-3 transition-all duration-[0.3s] ease-in-out hover:scale-[1.01] group cursor-pointer"
+        >
+          <img
+            class="w-[300px] h-[300px] lg:w-full lg:h-[574px] object-cover object-center"
+            src="./images/cat-man2.png"
+            alt="man"
+          />
+          <div
+            class="absolute bottom-0 left-0 px-5 overflow-hidden z-1 group-hover:bg-black/30 group-hover:w-[300px] group-hover:h-[300px] lg:group-hover:w-full lg:group-hover:h-full"
+          >
+            <p
+              class="flex flex-row items-center justify-center h-full text-lg text-white uppercase opacity-0 group-hover:opacity-100"
+            >
+              Category Name
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- category section ends here -->
+    <!-- Woman section starts here -->
+    <section
+      class="px-5 section__spacing-y content__center animate-fade-bottom"
+    >
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h3 class="text-sm font-bold">WOMEN’S FASHION</h3>
+        <p class="text-[15px] font-normal text-center">
+          Shop our new arrivals from established brands
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-6 mt-16 justify-items-center md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="flex flex-col gap-9">
+          <img
+            class="w-[268px] h-[371px]"
+            src="./images/wf1.png"
+            alt="womens"
+          />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-9">
+          <img
+            class="w-[268px] h-[371px]"
+            src="./images/wf2.png"
+            alt="womens"
+          />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-9">
+          <img
+            class="w-[268px] h-[371px]"
+            src="./images/wf3.png"
+            alt="womens"
+          />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-9">
+          <img
+            class="w-[268px] h-[371px]"
+            src="./images/wf4.png"
+            alt="womens"
+          />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- woman section ends here -->
+
+    <!--Men's section-->
+    <section
+      class="px-5 section__spacing-y content__center animate-fade-bottom"
+    >
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h3 class="text-sm font-bold">MEN’S FASHION</h3>
+        <p class="text-[15px] font-normal text-center">
+          Shop our new arrivals from established brands
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-6 mt-16 justify-items-center md:grid-cols-2 lg:grid-cols-4"
+      >
+        <div class="flex flex-col gap-9">
+          <img class="w-[268px] h-[371px]" src="./images/mf1.png" alt="men" />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-9">
+          <img class="w-[268px] h-[371px]" src="./images/mf2.png" alt="men" />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-9">
+          <img class="w-[268px] h-[371px]" src="./images/mf4.png" alt="men" />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-9">
+          <img
+            class="w-[268px] h-[371px]"
+            src="./images/cat-man2.png"
+            alt="womens"
+          />
+          <div class="flex flex-col gap-1">
+            <p class="text-[15px] font-light">IGURE</p>
+            <h4 class="text-[15px] font-semibold">
+              GREEN MUSCLE FIT POLO SHIRT
+            </h4>
+            <div class="flex flex-row gap-3">
+              <p class="text-[15px] font-normal line-through">$229.00</p>
+              <h5 class="text-[15px] text-[#CF2929]">$129.00</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Men's section End-->
+     <!--Banner section-->
+     <section class="relative section__spacing-y">
+        <div>
+          <img
+            src="./images/t19.png"
+            alt="hero-image"
+            class="w-full object-cover object-right h-[600px] md:h-full"
+          />
+  
+          <div
+            class="absolute bottom-1/4 flex flex-col justify-start text-base font-medium p-5 md:left-[10%] md:text-lg xl:pr-20 2xl:pr-56 animate-fade-left overflow-hidden"
+          >
+            <h2>OWN THE DAY</h2>
+            <h1
+              class="text-[25px] leading-normal md:text-4xl md:leading-normal 2xl:text-[80px] font-bold"
+            >
+              TACHEN 19
+            </h1>
+            <div class="flex flex-row gap-[34px] my-5 lg:my-[34px]">
+              <button type="button" class="py-1 text-white bg-black-text px-7">
+                SHOP COLLECTION
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Banner section End-->
+ 
+      <!--Footer section-->
+      <!--  <footer class="bg-[#F2F8FC] text-[15px] px-5"> -->
+        <div
+          class="flex flex-col gap-40 lg:flex-row content__center section__spacing-y"
+        >
+          <div class="flex-[0.7] flex flex-col">
+            <div class="logo flex-[0.3] font-bold text-[25px]">
+              <a class="uppercase" href="#"> Fashion Commerce</a>
+            </div>
+            <p class="text-[15px] mt-[17px] mb-10">
+              We earned a reputation of being good at what we do. <br />Let us
+              take your online shop to new dimension in success!
+            </p>
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex flex-row items-center justify-start gap-5 location"
+              >
+                <ion-icon name="locate-outline"></ion-icon>
+                <p>Mukamira, Nyabihu</p>
+              </div>
+              <div>
+                <p class="underline">jolieprincesseishimwe@gmail.com</p>
+                <p>+250785060644</p>
+              </div>
+              <div class="flex flex-row gap-4 social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!--Right Section-->
+          <div class="flex flex-col flex-1 gap-[70px]">
+            <!-- top section -->
+            <div class="">
+              <h6 class="font-bold text-[25px]">RECIVE EMAIL UPDATES</h6>
+              <div class="mt-[17px] flex flex-row">
+                <input
+                  class="w-[532px] h-[45px] pl-5 rounded-l-lg"
+                  type="email"
+                  name="email"
+                  id=""
+                  placeholder="Your Email Address"
+                />
+                <button
+                  class="px-5 bg-white rounded-r-lg"
+                  type="submit"
+                  name="join"
+                >
+                  JOIN
+                </button>
+              </div>
+            </div>
+            <!-- top section end -->
+  
+            <div class="flex flex-col justify-between gap-10 md:flex-row">
+              <!--Shop link section-->
+               <div class="flex flex-col gap-6">
+                <h6 class="text-xl font-semibold">SHOP</h6>
+                <ul class="flex flex-col gap-[21px]">
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Collection</a></li>
+                  <li><a href="#">Outlet</a></li>
+                  <li><a href="#">Lookbook</a></li>
+                </ul>
+              </div>
+              <!--Shop link section end-->
+  
+              <!--FAQ link section-->
+              <div class="flex flex-col gap-6">
+                <h6 class="text-xl font-semibold">HELP</h6>
+                <ul class="flex flex-col gap-[21px]">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privecy Policy</a></li>
+                  <li><a href="#">Tearms and conditions</a></li>
+                  <li><a href="#">Return and Exchanges</a></li>
+                </ul>
+              </div>
+              <!--FAQ link section end-->
+  
+              <!--ABout link section-->
+               <div class="flex flex-col gap-6"> 
+                <h6 class="text-xl font-semibold">ABOUT</h6>
+                <ul class="flex flex-col gap-[21px]">
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Store Location</a></li>
+                <!-- </ul> -->
+              </div>
+              <!--ABout link section end-->
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row justify-center items-center bg-[#E7F5F8] h-[98px]"
+        >
+          <p>Copyright © 2024 .Shopify All rights reserved</p>
+        </div>
+      </footer>
+      <!--Footer section End-->
+     <script src="./js/app.js"></script> 
+    </body> 
+  
+  </body>
+</html>
